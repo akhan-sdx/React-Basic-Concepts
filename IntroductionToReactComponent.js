@@ -1,4 +1,5 @@
 import React from "react";
+import { Component } from "react";
 
 
 function MyComponent(props) {
@@ -26,3 +27,35 @@ export default MyComponent;
 // Props  :=  are inputs that are passed to a component from its parent component.
 // They are read-only and cannot be modified within the component itself.
 // Props are used to customize the behavior and appearance of a component
+
+
+// 1) Functional components are JavaScript functions that return JSX
+
+export const Greeting = () => {
+  return <h1>Hello, My name is Khan!</h1>;
+};
+
+
+// 2) Class Component.
+
+export class Counter extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0,
+    };
+  }
+
+  render() {
+    return (
+      <div>
+        <p>Count: {this.state.count}</p>
+        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+          Increment
+        </button>
+      </div>
+    );
+  }
+}
+

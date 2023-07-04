@@ -51,7 +51,6 @@ export function FormExample() {
         setName('');
         setEmail('');
       }
-       return (<><h1> Your form has been submited</h1></>)
 
     };
   
