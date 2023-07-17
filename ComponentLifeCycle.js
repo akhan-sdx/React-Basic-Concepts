@@ -9,6 +9,10 @@ class LifecycleExample extends Component {
     console.log('Constructor called');
   }
 
+  UNSAFE_componentWillMount() {
+    console.log("Inside component will unmount.....")
+  }
+
   static getDerivedStateFromProps(props, state) {
     console.log('getDerivedStateFromProps called');
     return null;
