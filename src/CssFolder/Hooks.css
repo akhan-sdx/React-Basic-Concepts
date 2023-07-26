@@ -1,0 +1,11 @@
+.use-effect-btn {
+    background-color: #4CAF50;
+    border: rgb(255, 255, 255);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold; /* Example style */
+  }
+  
