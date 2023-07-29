@@ -4,18 +4,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import GetPersonInfo from './useOfReactComponent';
-import {Counter, ToggleButton , ExampleForStateComponent} from './useStateAndState';
-import { EventHandlingExample, FormExample } from './eventHandling';
+import GetPersonInfo from './UseOfReactComponent';
+import {Counter, ToggleButton , ExampleForStateComponent} from './UseStateAndState';
+import { EventHandlingExample, FormExample } from './EventHandling';
 import { Greeting } from './IntroductionToReactComponent';
-import Timer from './componentLifeCycle';
-import LifecycleExample from './componentLifeCycle';
+import Timer from './ComponentLifeCycle';
+import LifecycleExample from './ComponentLifeCycle';
 import { BrowserRouter as Router, Route,Routes , Link} from 'react-router-dom';
-import DestructuredProps from './destructuringProps';
+import DestructuredProps from './DestructuringProps';
 import SetStateExample from './stateAndProps';
 import {UseEffectExplanation,ThemeButton} from './hooks';
-import ReduxElement from './reduxPracticleExample';
-import ReduxClassComponent from "./reduxClassComponentExample"
+import ReduxElement from './ReduxPracticleExample';
+import ReduxClassComponent from "./ReduxClassComponentExample"
+import MousePositionComponent from './CustomHookExample';
 
 function App() {
   return (
@@ -62,6 +63,7 @@ function App() {
        {/* <ReduxElement/> */}
 
        <ReduxClassComponent/>
+       <MousePositionComponent/>
     </div>
   );
 }
